@@ -14,6 +14,10 @@ Note: -En was not tested on the Switch version.
 
 Note 2: I'm not sure if -En extracts every english file, but it seems so.
 
+The 2 args can be used together or just 1:
+```
+P5Strikers.exe LINKDATA.IDX LINKDATA.BIN [output_path] -PC -En
+```
 To encrypt the files back: (for PC version)
 ```
 P5Strikers.exe enc [folder_path]
