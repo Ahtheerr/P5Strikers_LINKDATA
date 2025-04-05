@@ -40,5 +40,7 @@ Note: If editing the PC LINKDATA, the folder with the encrypted files must be ch
 # P5SPC_LD
 
 Used to extract and inject LINKDATA.IDX of the Steam version.
+
 This tool does not need Command Line, just open it normally and select the game.exe.
+
 Select an IDX to inject it, cancel the operation to extract it.
