@@ -44,3 +44,23 @@ Used to extract and inject LINKDATA.IDX of the Steam version.
 This tool does not need Command Line, just open it normally and select the game.exe.
 
 Select an IDX to inject it, cancel the operation to extract it.
+
+# P5S_Text
+
+This tool can export and import texts from files extracted from LINKDATA.
+
+To export:
+
+```
+P5S_Text X.bin
+```
+
+To import:
+
+```
+P5S_Text X.txt
+```
+
+Both .txt and .bin have to be on the same folder.
+
+Note: This tool wasn't tested with every single text file, but it worked on the ones I tested on.
