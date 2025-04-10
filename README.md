@@ -18,9 +18,9 @@ The 2 args can be used together or just 1:
 ```
 P5Strikers.exe LINKDATA.IDX LINKDATA.BIN [output_path] -PC -En
 ```
-To encrypt the files back: (for PC version)
+~~To encrypt the files back: (for PC version)~~ This function still exists, but it is now unecessary due to encryption on import with linkdata.exe
 ```
-P5Strikers.exe enc [folder_path]
+P5Strikers.exe enc [folder_path] 
 ```
 Note: The names of the files must be unchanged.
 
@@ -34,6 +34,8 @@ Command:
 ```
 Linkdata.exe injectfolder LINKDATA.BIN [folder]
 ```
+
+Use argument *-En* to encrypt files during import. (For Steam version.)
 
 Note: If editing the PC LINKDATA, the folder with the encrypted files must be chosen.
 
