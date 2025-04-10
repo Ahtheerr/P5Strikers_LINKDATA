@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text;
 
@@ -136,8 +136,8 @@ class TextExtractor
                 currentNewOffset += textBytes.Length + 1;
             }
 
-            // Cria o novo arquivo binário com espaço para a tabela de textos
-            byte[] newBinBytes = new byte[textTableOffset + newTextTable.Length];
+            // Inicializa newBinBytes com o tamanho do arquivo original
+            byte[] newBinBytes = new byte[binBytes.Length];
             Array.Copy(binBytes, 0, newBinBytes, 0, binBytes.Length);
 
             // Salva os 4 bytes protegidos de cada ID
@@ -177,7 +177,9 @@ class TextExtractor
                 Array.Copy(protectedBytes[i], 0, newBinBytes, protectedPositions[i], 4);
             }
 
-            // Copia a nova tabela de textos
+            // Copia a nova tabela de textos e ajusta o tamanho do arquivo
+            int finalSize = (int)textTableOffset + (int)newTextTable.Length;
+            Array.Resize(ref newBinBytes, finalSize);
             newTextTable.Position = 0;
             newTextTable.Read(newBinBytes, (int)textTableOffset, (int)newTextTable.Length);
 
