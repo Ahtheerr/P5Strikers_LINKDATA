@@ -47,7 +47,7 @@ This tool does not need Command Line, just open it normally and select the game.
 
 Select an IDX to inject it, cancel the operation to extract it.
 
-# P5S_Text
+# ~~P5S_Text~~ Currently broken. Use the Russian Tool from here instead. https://github.com/Ahtheerr/P5-Strikers-LINKDATA-Tools
 
 This tool can export and import texts from files extracted from LINKDATA.
 
